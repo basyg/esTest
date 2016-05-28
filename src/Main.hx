@@ -218,7 +218,7 @@ class Size
 
 class VectorSpeed
 {
-	static public inline function fromRandomPolar(minSpeed:Float = 0, maxSpeed:Float = 0, minAngle:Float = 0, maxAngle:Float = 3.141592653589793):VectorSpeed
+	static public inline function fromRandomPolar(minSpeed:Float = 0, maxSpeed:Float = 0, minAngle:Float = 0, maxAngle:Float = 2 * 3.141592653589793):VectorSpeed
 	{
 		var speed = minSpeed + Math.random() * (maxSpeed - minSpeed);
 		var angle = minAngle + Math.random() * (maxAngle - minAngle);
