@@ -32,7 +32,7 @@ class Main
 	
 	static function start()
 	{
-		for (i in 0...1000) 
+		for (i in 0...10000) 
 		{
 			var entity = es.createEntity();
 			makeSquare(entity);
@@ -178,7 +178,7 @@ class DisplaySystem extends TimeDeltaSystem
 			rect.x = position.x;
 			rect.y = position.y;
 			rect.width = size.x;
-			rect.height = size.x;
+			rect.height = size.y;
 			_bitmapData.fillRect(rect, color.int);
 		});
 		_bitmapData.unlock();
